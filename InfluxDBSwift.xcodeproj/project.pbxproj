@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		ED0BA9441F90C37C009BE805 /* InfluxDBSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0BA9421F90C37C009BE805 /* InfluxDBSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDD99E101F94CE87001F0ECD /* Multitarget.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EDD99E0F1F94CE87001F0ECD /* Multitarget.xcconfig */; };
+		EDD99E191F94CF42001F0ECD /* InfluxDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD99E131F94CF42001F0ECD /* InfluxDBClient.swift */; };
+		EDD99E1A1F94CF42001F0ECD /* InfluxDBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD99E141F94CF42001F0ECD /* InfluxDBError.swift */; };
+		EDD99E1B1F94CF42001F0ECD /* InfluxDBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD99E151F94CF42001F0ECD /* InfluxDBRequest.swift */; };
+		EDD99E1C1F94CF42001F0ECD /* InfluxDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD99E161F94CF42001F0ECD /* InfluxDBResponse.swift */; };
+		EDD99E1D1F94CF42001F0ECD /* QueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD99E171F94CF42001F0ECD /* QueryRequest.swift */; };
+		EDD99E1E1F94CF42001F0ECD /* WriteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD99E181F94CF42001F0ECD /* WriteRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +22,12 @@
 		ED0BA9421F90C37C009BE805 /* InfluxDBSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfluxDBSwift.h; sourceTree = "<group>"; };
 		ED0BA9431F90C37C009BE805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD99E0F1F94CE87001F0ECD /* Multitarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Multitarget.xcconfig; sourceTree = "<group>"; };
+		EDD99E131F94CF42001F0ECD /* InfluxDBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfluxDBClient.swift; sourceTree = "<group>"; };
+		EDD99E141F94CF42001F0ECD /* InfluxDBError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfluxDBError.swift; sourceTree = "<group>"; };
+		EDD99E151F94CF42001F0ECD /* InfluxDBRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfluxDBRequest.swift; sourceTree = "<group>"; };
+		EDD99E161F94CF42001F0ECD /* InfluxDBResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfluxDBResponse.swift; sourceTree = "<group>"; };
+		EDD99E171F94CF42001F0ECD /* QueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryRequest.swift; sourceTree = "<group>"; };
+		EDD99E181F94CF42001F0ECD /* WriteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,7 @@
 		ED0BA8DD1F90B508009BE805 = {
 			isa = PBXGroup;
 			children = (
+				EDD99E121F94CF42001F0ECD /* Sources */,
 				ED0BA9411F90C37C009BE805 /* InfluxDBSwift */,
 				ED0BA8EA1F90B710009BE805 /* Products */,
 				ED0BA97B1F90DA15009BE805 /* Frameworks */,
@@ -61,6 +74,19 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDD99E121F94CF42001F0ECD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EDD99E131F94CF42001F0ECD /* InfluxDBClient.swift */,
+				EDD99E141F94CF42001F0ECD /* InfluxDBError.swift */,
+				EDD99E151F94CF42001F0ECD /* InfluxDBRequest.swift */,
+				EDD99E161F94CF42001F0ECD /* InfluxDBResponse.swift */,
+				EDD99E171F94CF42001F0ECD /* QueryRequest.swift */,
+				EDD99E181F94CF42001F0ECD /* WriteRequest.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD99E1C1F94CF42001F0ECD /* InfluxDBResponse.swift in Sources */,
+				EDD99E1B1F94CF42001F0ECD /* InfluxDBRequest.swift in Sources */,
+				EDD99E1A1F94CF42001F0ECD /* InfluxDBError.swift in Sources */,
+				EDD99E1D1F94CF42001F0ECD /* QueryRequest.swift in Sources */,
+				EDD99E191F94CF42001F0ECD /* InfluxDBClient.swift in Sources */,
+				EDD99E1E1F94CF42001F0ECD /* WriteRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
