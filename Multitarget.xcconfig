@@ -9,3 +9,11 @@ SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulato
 
 LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @loader_path/Frameworks";
 LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] = "@executable_path/../Frameworks @loader_path/../Frameworks";
+
+FRAMEWORK_SEARCH_PATHS[sdk=appletvos*] = "$(SRCROOT)/Carthage/Build/tvOS";
+FRAMEWORK_SEARCH_PATHS[sdk=appletvsimulator*] = "$(SRCROOT)/Carthage/Build/tvOS";
+FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*] = "$(SRCROOT)/Carthage/Build/iOS";
+FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*] = "$(SRCROOT)/Carthage/Build/iOS";
+FRAMEWORK_SEARCH_PATHS[sdk=watchos*] = "$(SRCROOT)/Carthage/Build/watchOS";
+FRAMEWORK_SEARCH_PATHS[sdk=watchsimulator*] = "$(SRCROOT)/Carthage/Build/watchOS";
+FRAMEWORK_SEARCH_PATHS[sdk=macosx*] = "$(SRCROOT)/Carthage/Build/Mac";
