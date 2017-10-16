@@ -6,10 +6,10 @@
 //  Copyright © 2017年 takumiabe. All rights reserved.
 //
 
-struct InfluxDBError: Error {
+public struct InfluxDBError: Error {
     let message: String
 
-    init(object: Any) {
+    public init(object: Any) {
         let dic = object as? [String: Any]
         self.message = dic?["error"] as? String ?? "unknown error"
     }

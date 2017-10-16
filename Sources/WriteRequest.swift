@@ -31,11 +31,11 @@ class WriteRequest: InfluxDBRequest {
     var method = HTTPMethod.post
     var path = "/write"
 
-    public var queryParameters: [String: Any]? {
+    var queryParameters: [String: Any]? {
         return ["db": self.influxdb.dbName]
     }
 
-    public var bodyParameters: BodyParameters? {
+    var bodyParameters: BodyParameters? {
         return WriteParameters(request: self)
     }
 

@@ -6,8 +6,6 @@
 //  Copyright © 2017年 takumiabe. All rights reserved.
 //
 
-import APIKit
-
 enum InfluxDBResponse {
     case noContent
     case results([Any])

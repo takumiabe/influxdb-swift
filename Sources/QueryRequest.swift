@@ -23,7 +23,7 @@ class QueryRequest: InfluxDBRequest {
     var method = HTTPMethod.post
     var path = "/query"
 
-    public var queryParameters: [String: Any]? {
+    var queryParameters: [String: Any]? {
         if self.database != nil {
             return ["q": self.query, "db": self.database!]
         } else {

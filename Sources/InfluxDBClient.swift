@@ -8,27 +8,27 @@
 
 import APIKit
 
-class InfluxDBClient {
-    typealias Tags = [String: String]
-    typealias Fields = [String: String]
+open class InfluxDBClient {
+    public typealias Tags = [String: String]
+    public typealias Fields = [String: String]
 
     let host: URL
     let dbName: String
 
-    init(host: URL, databaseName: String) {
+    public init(host: URL, databaseName: String) {
         self.host = host
         self.dbName = databaseName
     }
 
-    func createDatabase(database: String) {
+    open func createDatabase(database: String) {
         send(QueryRequest(influxdb: self, query: "CREATE DATABASE \(database)"))
     }
 
-    func dropDatabase(database: String) {
+    open func dropDatabase(database: String) {
         send(QueryRequest(influxdb: self, query: "DROP DATABASE \(database)"))
     }
 
-    func write(measurement: String, tags: Tags = [:], fields: Fields) {
+    open func write(measurement: String, tags: Tags = [:], fields: Fields) {
         send(WriteRequest.init(influxdb: self, measurement: measurement, tags: tags, fields: fields))
     }
 
