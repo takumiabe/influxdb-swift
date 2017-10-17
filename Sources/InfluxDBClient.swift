@@ -12,12 +12,12 @@ open class InfluxDBClient {
     public typealias Tags = [String: String]
     public typealias Fields = [String: String]
 
-    let host: URL
-    let dbName: String
+    public let host: URL
+    public let database: String
 
     public init(host: URL, databaseName: String) {
         self.host = host
-        self.dbName = databaseName
+        self.database = databaseName
     }
 
     open func createDatabase(database: String) {

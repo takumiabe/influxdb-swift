@@ -7,7 +7,7 @@
 //
 
 public struct InfluxDBError: Error {
-    let message: String
+    public let message: String
 
     public init(object: Any) {
         let dic = object as? [String: Any]

@@ -32,7 +32,7 @@ class WriteRequest: InfluxDBRequest {
     var path = "/write"
 
     var queryParameters: [String: Any]? {
-        return ["db": self.influxdb.dbName]
+        return ["db": self.influxdb.database]
     }
 
     var bodyParameters: BodyParameters? {
